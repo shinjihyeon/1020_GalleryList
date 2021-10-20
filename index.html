@@ -15,83 +15,88 @@
 <body>
     <div id="headerArea">
         <header id="header" class="flex-container">
-            <div id="headerLogoArea" class="flex-container">
-                <img src="images/headerLogo.png" alt="로고" width="128px" height="34px">
+
+            <div id="headerLogoArea">
+                <img src="../images/headerLogo.png" alt="로고" width="128">
             </div>
+            <!-- div#headerLogoArea -->
+
             <div id="headerMenuArea">
                 <nav id="headerLnb">
                     <ul id="headerLnbMainMenu" class="flex-container">
-                        <li class="haderLnbMainLi"><a href="#">ORDER</a></li>
-                        <li class="haderLnbMainLi"><a href="#">LOGIN</a></li>
-                        <li class="haderLnbMainLi"><a href="#">JOIN</a></li>
+                        <li class="headerLnbMainLi"><a href="#">ORDER</a></li>
+                        <li class="headerLnbMainLi"><a href="#">LOGIN</a></li>
+                        <li class="headerLnbMainLi"><a href="#">JOIN</a></li>
                     </ul>
                 </nav>
+                <!-- nav#headerLnb -->
+
                 <div id="cartNlistMenu" class="flex-container">
+
                     <div id="cartLink">
                         <span id="cartGoodsCnt">0</span>
                     </div>
+                    <!-- div#cartLink -->
+
                     <div id="sideMenu">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
+                    <!-- div#sideMenu -->
+
                 </div>
+                <!-- div#cartNlistMenu -->
+
             </div>
+            <!-- div#headerMenuArea -->
+
         </header>
+        <!-- header#header -->
     </div>
+    <!-- div#headerArea -->
+
+
     <div id="wrap">
         <div id="goodsPart">All</div>
+
         <main id="galleryListArea" class="flex-container">
-            <table>
+
+            <table class='goodsTbl'>
                 <tbody>
                     <tr>
-                        <td><img src="images/1.jpg" alt="" width="320"></td>
+                        <td>
+                            <img alt='' width='320'>
+                        </td>
+                        <!-- 상품이미지 -->
                     </tr>
                     <tr>
-                        <td>헤리터 시그니처 칼도마세트 (월넛)</td>
+                        <td class='goodsName'></td>
+                        <!-- 상품명 -->
                     </tr>
                     <tr>
-                        <td>월넛 색상의 해리터 식과도&도마 세트</td>
+                        <td class='goodsDesc'></td>
+                        <!-- 상품설명 goods Describe -->
                     </tr>
                     <tr>
-                        <td><span class="numComma">355000원</span><span class="numComma"></span> 298000원</td>
+                        <td class='goodsPrice'>
+                            <span class='basicPrice numComma'></span>
+                            <!-- 기본판매가격  numComma : 천단위 구분 쉼표 -->
+                            <span class='salePrice numComma'></span>
+                            <!-- 할인가격 -->
+                        </td>
                     </tr>
                     <tr>
-                        <td>RE : 5487</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/1.jpg" alt="" width="320"></td>
-                    </tr>
-                    <tr>
-                        <td>헤리터 시그니처 칼도마세트 (월넛)</td>
-                    </tr>
-                    <tr>
-                        <td>월넛 색상의 해리터 식과도&도마 세트</td>
-                    </tr>
-                    <tr>
-                        <td><span class="numComma">355000원</span><span class="numComma"></span> 298000원</td>
-                    </tr>
-                    <tr>
-                        <td>RE : 5487</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/1.jpg" alt="" width="320"></td>
-                    </tr>
-                    <tr>
-                        <td>헤리터 시그니처 칼도마세트 (월넛)</td>
-                    </tr>
-                    <tr>
-                        <td>월넛 색상의 해리터 식과도&도마 세트</td>
-                    </tr>
-                    <tr>
-                        <td><span class="numComma">355000원</span><span class="numComma"></span> 298000원</td>
-                    </tr>
-                    <tr>
-                        <td>RE : 5487</td>
+                        <td><span class='replyCnt numComma'>0</span></td>
+                        <!-- 댓글 수 -->
                     </tr>
                 </tbody>
             </table>
+            <!-- table.goodsTbl 상품출력용 테이블 -->
+
         </main>
+        <!-- main#galleryListArea -->
+
     </div>
 </body>
 
