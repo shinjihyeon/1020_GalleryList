@@ -2,19 +2,25 @@
 @import url(style_Reset.css);
 
 div#headerArea {
+    width: 100%;
     padding: 2px 0;
-    /* border: 1px solid #000; */
+    /* border: 1px solid #f80; */
     background-color: #f1e7d5;
     margin-bottom: 48px;
+
+    position: sticky;
+    right: 0;
+    top: 0;
+
 }
 
 
 header#header {
     width: 1000px;
-    /* border: 1px solid #000; */
+    /* border: 1px solid #08f; */
     margin: 0 auto;
 
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 
@@ -95,19 +101,21 @@ header#header {
 /* div#wrap 시작 */
 div#wrap {
     width: 1000px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: 0 auto;
 }    
 
 #wrap div#goodsPart {
+    color: #5f4a38;
     font-size: 19px;
     font-family: batang, sans-serif;
-    border: 1px solid #f80;
-    margin-bottom: 20px;
+    /* border: 1px solid #f80; */
+    margin-bottom: 36px;
 
 }
 
 #wrap  main#galleryListArea {
+    margin-bottom: 40px;
     flex-wrap: wrap;
 
 }
@@ -171,3 +179,46 @@ div#wrap {
 }
 
 /* table.goodsTbl 상품 출력용 테이블 끝 */
+
+
+/* div#pagingArea 페이징(=페이지 나누기) 시작 */
+div#pagingArea {
+    margin-bottom: 100px;
+    justify-content: center;
+}
+div#pagingArea div.pageBox {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+}
+div#pagingArea div.pageBox a {
+    width: 100%;
+    height: 100%;
+    color: #999;
+    font-size: 12px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+div#pagingArea div.pageNum {
+    border: 1px solid #ccc;    
+    transform: translateY(2px);    
+}
+div#pagingArea div.pageBox:not(:last-child) {
+    border-right: none;
+}
+
+div#pagingArea div.nowPage a {
+    color: #555;
+    border-bottom: 3px solid #555;
+}
+
+div#pagingArea div.pageNum:hover {
+    background-color: #eee;
+}
+/* div#pagingArea 페이징(=페이지 나누기) 끝 */
+
+
+
+
